@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Careers | Lifeworks Advisors</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Brand Configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    },
+                    colors: {
+                        unique: {
+                            dark: '#0f1d38',   /* Deep Royal Navy */
+                            body: '#475569',   /* Cool Steel Blue */
+                            light: '#94a3b8',  
+                        },
+                        brand: {
+                            blue: '#2563EB',
+                            purple: '#7C3AED',
+                            gray: '#F8F9FB',
+                        }
+                    },
+                    boxShadow: {
+                        'soft': '0 4px 20px -2px rgba(0, 0, 0, 0.05)',
+                        'hover': '0 15px 30px -5px rgba(37, 99, 235, 0.15)',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-brand-gray text-unique-body antialiased">
+
+    <!-- ✅ NAVIGATION BAR -->
+    <nav class="fixed w-full z-50 bg-white/80 backdrop-blur-md border-b border-slate-100">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <div class="flex-shrink-0 flex items-center gap-2 cursor-pointer">
+                    <a href="index.html" class="flex items-center gap-2">
+                        <span class="text-2xl font-serif font-bold text-unique-dark tracking-tight">Lifeworks</span>
+                        <i class="fa-solid fa-arrow-trend-up text-brand-blue text-lg"></i>
+                    </a>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="services.html" class="text-unique-body hover:text-brand-blue px-3 py-2 rounded-md text-sm font-medium transition">Services</a>
+                        <a href="about.html" class="text-unique-body hover:text-brand-blue px-3 py-2 rounded-md text-sm font-medium transition">About</a>
+                        <a href="Careers.html" class="text-brand-blue px-3 py-2 rounded-md text-sm font-bold transition">Careers</a>
+                        <a href="insights.html" class="text-unique-body hover:text-brand-blue px-3 py-2 rounded-md text-sm font-medium transition">Insights</a>
+                    </div>
+                </div>
+                <div class="hidden md:block">
+                    <a href="contact.html" class="bg-unique-dark text-white px-6 py-2.5 rounded-full text-sm font-medium hover:bg-brand-blue transition shadow-lg shadow-slate-200">
+                        Contact Us
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- MAIN CONTAINER -->
+    <main class="pt-32 pb-20">
+        
+        <!-- HEADER -->
+        <div class="text-center mb-12">
+            <h4 class="text-brand-blue font-bold uppercase tracking-wider text-xs mb-3">Careers</h4>
+            <h1 class="text-4xl font-serif font-bold text-unique-dark">Open Job Positions</h1>
+        </div>
+
+        <!-- 🔵 SECTION 1: SQUARE JOB CARDS GRID -->
+        <div class="max-w-6xl mx-auto px-6 mb-24">
+            <div class="grid md:grid-cols-3 gap-8">
+
+                <!-- Card 1: Senior Accountant -->
+                <div class="bg-white p-8 rounded-2xl shadow-soft hover:shadow-hover hover:-translate-y-2 transition-all duration-300 flex flex-col items-center justify-center text-center group cursor-pointer border border-transparent hover:border-blue-100 h-full">
+                    
+                    <!-- Icon Bubble -->
+                    <div class="w-16 h-16 rounded-full bg-blue-50 text-brand-blue flex items-center justify-center text-2xl mb-6 group-hover:bg-brand-blue group-hover:text-white transition duration-300">
+                        <i class="fa-solid fa-briefcase"></i>
+                    </div>
+
+                    <h3 class="text-xl font-bold text-unique-dark mb-4">Senior Accountant</h3>
+                    
+                    <div class="space-y-2 text-sm text-unique-body mb-8">
+                        <div class="flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-clock text-brand-blue opacity-70"></i>
+                            <span>Full-time</span>
+                        </div>
+                        <div class="flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-location-dot text-brand-blue opacity-70"></i>
+                            <span>Pune / Remote</span>
+                        </div>
+                    </div>
+
+                    <!-- Arrow Button -->
+                    <div class="w-10 h-10 rounded-full bg-brand-gray text-brand-blue flex items-center justify-center transform group-hover:rotate-45 group-hover:bg-brand-blue group-hover:text-white transition duration-300">
+                        <i class="fa-solid fa-arrow-up text-sm"></i>
+                    </div>
+                </div>
+
+                <!-- Card 2: Tax Consultant -->
+                <div class="bg-white p-8 rounded-2xl shadow-soft hover:shadow-hover hover:-translate-y-2 transition-all duration-300 flex flex-col items-center justify-center text-center group cursor-pointer border border-transparent hover:border-blue-100 h-full">
+                    
+                    <!-- Icon Bubble -->
+                    <div class="w-16 h-16 rounded-full bg-purple-50 text-brand-purple flex items-center justify-center text-2xl mb-6 group-hover:bg-brand-purple group-hover:text-white transition duration-300">
+                        <i class="fa-solid fa-file-invoice-dollar"></i>
+                    </div>
+
+                    <h3 class="text-xl font-bold text-unique-dark mb-4">Tax Consultant</h3>
+                    
+                    <div class="space-y-2 text-sm text-unique-body mb-8">
+                        <div class="flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-clock text-brand-purple opacity-70"></i>
+                            <span>Full-time</span>
+                        </div>
+                        <div class="flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-location-dot text-brand-purple opacity-70"></i>
+                            <span>Mumbai (Hybrid)</span>
+                        </div>
+                    </div>
+
+                    <!-- Arrow Button -->
+                    <div class="w-10 h-10 rounded-full bg-brand-gray text-brand-purple flex items-center justify-center transform group-hover:rotate-45 group-hover:bg-brand-purple group-hover:text-white transition duration-300">
+                        <i class="fa-solid fa-arrow-up text-sm"></i>
+                    </div>
+                </div>
+
+                <!-- Card 3: Audit Assistant -->
+                <div class="bg-white p-8 rounded-2xl shadow-soft hover:shadow-hover hover:-translate-y-2 transition-all duration-300 flex flex-col items-center justify-center text-center group cursor-pointer border border-transparent hover:border-blue-100 h-full">
+                    
+                    <!-- Icon Bubble -->
+                    <div class="w-16 h-16 rounded-full bg-green-50 text-green-600 flex items-center justify-center text-2xl mb-6 group-hover:bg-green-600 group-hover:text-white transition duration-300">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+
+                    <h3 class="text-xl font-bold text-unique-dark mb-4">Audit Assistant</h3>
+                    
+                    <div class="space-y-2 text-sm text-unique-body mb-8">
+                        <div class="flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-clock text-green-600 opacity-70"></i>
+                            <span>Full-time</span>
+                        </div>
+                        <div class="flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-location-dot text-green-600 opacity-70"></i>
+                            <span>Remote</span>
+                        </div>
+                    </div>
+
+                    <!-- Arrow Button -->
+                    <div class="w-10 h-10 rounded-full bg-brand-gray text-green-600 flex items-center justify-center transform group-hover:rotate-45 group-hover:bg-green-600 group-hover:text-white transition duration-300">
+                        <i class="fa-solid fa-arrow-up text-sm"></i>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- 🔵 SECTION 2: APPLICATION FORM -->
+        <div class="max-w-3xl mx-auto px-6 mb-24">
+            <div class="bg-white rounded-2xl shadow-soft p-8 md:p-12 border border-slate-100 relative overflow-hidden">
+                <!-- Decorative Circle -->
+                <div class="absolute top-0 right-0 w-32 h-32 bg-brand-blue opacity-5 rounded-bl-full pointer-events-none"></div>
+
+                <h2 class="text-2xl font-serif font-bold text-unique-dark mb-8 text-center relative z-10">Submit Your Resume</h2>
+                
+                <form class="space-y-6 relative z-10">
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <!-- Name -->
+                        <div>
+                            <label class="block text-sm font-medium text-unique-dark mb-2">Full Name</label>
+                            <input type="text" placeholder="John Doe" class="w-full px-4 py-3 rounded-lg bg-gray-50 border border-slate-200 focus:outline-none focus:ring-2 focus:ring-brand-blue/20 focus:border-brand-blue transition">
+                        </div>
+                        <!-- Email -->
+                        <div>
+                            <label class="block text-sm font-medium text-unique-dark mb-2">Email Address</label>
+                            <input type="email" placeholder="john@example.com" class="w-full px-4 py-3 rounded-lg bg-gray-50 border border-slate-200 focus:outline-none focus:ring-2 focus:ring-brand-blue/20 focus:border-brand-blue transition">
+                        </div>
+                    </div>
+
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <!-- Phone -->
+                        <div>
+                            <label class="block text-sm font-medium text-unique-dark mb-2">Phone Number</label>
+                            <input type="tel" placeholder="+91 98765 43210" class="w-full px-4 py-3 rounded-lg bg-gray-50 border border-slate-200 focus:outline-none focus:ring-2 focus:ring-brand-blue/20 focus:border-brand-blue transition">
+                        </div>
+                        <!-- Role Selection -->
+                        <div>
+                            <label class="block text-sm font-medium text-unique-dark mb-2">Job Role</label>
+                            <select class="w-full px-4 py-3 rounded-lg bg-gray-50 border border-slate-200 focus:outline-none focus:ring-2 focus:ring-brand-blue/20 focus:border-brand-blue transition text-unique-body">
+                                <option>Select a role...</option>
+                                <option>Senior Accountant</option>
+                                <option>Tax Consultant</option>
+                                <option>Audit Assistant</option>
+                                <option>Other / General Application</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- File Upload -->
+                    <div>
+                        <label class="block text-sm font-medium text-unique-dark mb-2">Upload Resume (PDF, DOCX)</label>
+                        <div class="flex items-center justify-center w-full">
+                            <label class="flex flex-col items-center justify-center w-full h-32 border-2 border-slate-200 border-dashed rounded-lg cursor-pointer bg-gray-50 hover:bg-blue-50 transition">
+                                <div class="flex flex-col items-center justify-center pt-5 pb-6">
+                                    <i class="fa-solid fa-cloud-arrow-up text-2xl text-unique-light mb-2"></i>
+                                    <p class="text-sm text-unique-body"><span class="font-semibold">Click to upload</span> or drag and drop</p>
+                                </div>
+                                <input type="file" class="hidden" />
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Message -->
+                    <div>
+                        <label class="block text-sm font-medium text-unique-dark mb-2">Cover Letter / Message</label>
+                        <textarea rows="4" placeholder="Tell us why you'd be a great fit..." class="w-full px-4 py-3 rounded-lg bg-gray-50 border border-slate-200 focus:outline-none focus:ring-2 focus:ring-brand-blue/20 focus:border-brand-blue transition"></textarea>
+                    </div>
+
+                    <!-- Button -->
+                    <div class="text-right">
+                        <button type="button" class="bg-brand-blue text-white px-8 py-3 rounded-lg font-medium hover:bg-blue-600 transition shadow-lg shadow-blue-500/30 w-full md:w-auto">
+                            Submit Application
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- 🔵 SECTION 3: CAREERS AT LIFEWORK (With Human Touch Image) -->
+        <section class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="bg-white rounded-[2rem] overflow-hidden shadow-sm border border-slate-100">
+                <div class="grid lg:grid-cols-2">
+                    
+                    <!-- Left: Text & Values -->
+                    <div class="p-10 lg:p-16 flex flex-col justify-center">
+                        <h2 class="text-3xl font-serif font-bold text-unique-dark mb-6">Careers at Lifework</h2>
+                        <p class="text-lg text-unique-body leading-relaxed mb-10">
+                            Join a team of passionate finance professionals dedicated to delivering excellence. At Lifework, we don't just crunch numbers—we build futures. We value integrity, growth, and collaboration.
+                        </p>
+
+                        <div class="space-y-8">
+                            <!-- Value 1 -->
+                            <div class="flex items-start gap-4">
+                                <div class="w-12 h-12 bg-blue-50 rounded-full flex-shrink-0 flex items-center justify-center text-brand-blue text-xl">
+                                    <i class="fa-solid fa-chart-line"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-lg font-bold text-unique-dark">Growth Opportunities</h3>
+                                    <p class="text-sm text-unique-body leading-relaxed">Continuous learning programs & workshops.</p>
+                                </div>
+                            </div>
+
+                            <!-- Value 2 -->
+                            <div class="flex items-start gap-4">
+                                <div class="w-12 h-12 bg-purple-50 rounded-full flex-shrink-0 flex items-center justify-center text-brand-purple text-xl">
+                                    <i class="fa-regular fa-building"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-lg font-bold text-unique-dark">Flexible Culture</h3>
+                                    <p class="text-sm text-unique-body leading-relaxed">Hybrid work options for a balanced life.</p>
+                                </div>
+                            </div>
+
+                            <!-- Value 3 -->
+                            <div class="flex items-start gap-4">
+                                <div class="w-12 h-12 bg-green-50 rounded-full flex-shrink-0 flex items-center justify-center text-green-600 text-xl">
+                                    <i class="fa-solid fa-users-viewfinder"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-lg font-bold text-unique-dark">Meaningful Impact</h3>
+                                    <p class="text-sm text-unique-body leading-relaxed">Work directly with founders & solve real problems.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right: Human Touch Image -->
+                    <div class="relative h-full min-h-[400px]">
+                        <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                             alt="Lifeworks Team Culture" 
+                             class="absolute inset-0 w-full h-full object-cover">
+                        <!-- Subtle Gradient Overlay -->
+                        <div class="absolute inset-0 bg-gradient-to-l from-transparent to-black/10"></div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-white border-t border-slate-100 pt-16 pb-8">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 mb-16">
+                <div class="lg:col-span-2">
+                    <div class="flex items-center gap-2 mb-6">
+                        <span class="text-2xl font-serif font-bold text-unique-dark">Lifeworks</span>
+                        <i class="fa-solid fa-arrow-trend-up text-brand-blue text-sm"></i>
+                    </div>
+                    <p class="text-unique-body text-sm mb-8 max-w-sm">
+                        Expert financial guidance for individuals and businesses. Building a legacy of trust and growth since 2010.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="font-bold text-unique-dark mb-6">Company</h4>
+                    <ul class="space-y-4 text-sm text-unique-body">
+                        <li><a href="about.html" class="hover:text-brand-blue transition">Our Team</a></li>
+                        <li><a href="about.html" class="hover:text-brand-blue transition">Our Story</a></li>
+                        <li><a href="Careers.html" class="hover:text-brand-blue transition">Careers</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold text-unique-dark mb-6">Support</h4>
+                    <ul class="space-y-4 text-sm text-unique-body">
+                        <li><a href="contact.html" class="hover:text-brand-blue transition">Contact Us</a></li>
+                        <li><a href="clientlogin.html" class="hover:text-brand-blue transition">Client Login</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold text-unique-dark mb-6">Legal</h4>
+                    <ul class="space-y-4 text-sm text-unique-body">
+                        <li><a href="index.html" class="hover:text-brand-blue transition">Privacy Policy</a></li>
+                        <li><a href="index.html" class="hover:text-brand-blue transition">Terms of Use</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-slate-100 pt-8 text-center text-unique-light text-sm">
+                &copy; 2024 Lifeworks Advisors LLC. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

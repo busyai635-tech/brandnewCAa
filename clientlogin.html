@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Client Login | Lifeworks</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom Config (Same as your Index page) -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    },
+                    colors: {
+                        unique: {
+                            dark: '#0f1d38', 
+                            body: '#475569', 
+                            light: '#94a3b8',
+                        },
+                        brand: {
+                            blue: '#2563EB',
+                            purple: '#7C3AED',
+                            gray: '#F8F9FB',
+                        }
+                    },
+                    boxShadow: {
+                        'soft': '0 10px 40px -10px rgba(37, 99, 235, 0.1)',
+                        'card': '0 20px 60px -15px rgba(0, 0, 0, 0.1)',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Background Blob Animation */
+        .login-blob {
+            position: absolute;
+            width: 800px;
+            height: 800px;
+            background: radial-gradient(circle, rgba(37,99,235,0.06) 0%, rgba(255,255,255,0) 70%);
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 0;
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body class="bg-brand-gray text-unique-body antialiased min-h-screen flex items-center justify-center relative overflow-hidden px-4">
+
+    <!-- Background Decoration -->
+    <div class="login-blob"></div>
+
+    <!-- MAIN LOGIN CARD -->
+    <div class="bg-white w-full max-w-md p-8 md:p-12 rounded-3xl shadow-card relative z-10 border border-white">
+        
+        <!-- Logo Header -->
+        <div class="text-center mb-8">
+            <a href="index.html" class="inline-flex items-center gap-2 mb-2">
+                <span class="text-3xl font-serif font-bold text-unique-dark tracking-tight">Lifeworks</span>
+                <i class="fa-solid fa-arrow-trend-up text-brand-blue text-xl"></i>
+            </a>
+            <!-- Security Badge -->
+            <div class="flex justify-center mt-2">
+                <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-50 border border-slate-100 text-[10px] font-semibold text-unique-light uppercase tracking-wider">
+                    <i class="fa-solid fa-lock text-brand-blue"></i> Secure Portal
+                </span>
+            </div>
+        </div>
+
+        <!-- Text Content -->
+        <div class="text-center mb-8">
+            <h1 class="text-2xl font-bold text-unique-dark mb-2">Client Login</h1>
+            <p class="text-sm text-unique-body leading-relaxed">
+                Access your financial documents, reports, and services securely.
+            </p>
+        </div>
+
+        <!-- Login Form -->
+        <form action="#" method="POST" class="space-y-5">
+            
+            <!-- Email Input -->
+            <div>
+                <label for="email" class="block text-sm font-medium text-unique-dark mb-1.5 ml-1">Email Address</label>
+                <div class="relative">
+                    <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none text-unique-light">
+                        <i class="fa-regular fa-envelope"></i>
+                    </div>
+                    <input type="email" id="email" name="email" placeholder="name@company.com" required
+                        class="w-full pl-10 pr-4 py-3 rounded-xl border border-slate-200 focus:border-brand-blue focus:ring-2 focus:ring-brand-blue/20 outline-none transition duration-200 text-sm placeholder-slate-400 text-unique-dark">
+                </div>
+            </div>
+
+            <!-- Password Input -->
+            <div>
+                <div class="flex items-center justify-between mb-1.5 ml-1">
+                    <label for="password" class="block text-sm font-medium text-unique-dark">Password</label>
+                    <a href="#" class="text-xs font-medium text-brand-blue hover:text-unique-dark transition">Forgot Password?</a>
+                </div>
+                <div class="relative">
+                    <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none text-unique-light">
+                        <i class="fa-solid fa-lock"></i>
+                    </div>
+                    <input type="password" id="password" name="password" placeholder="••••••••" required
+                        class="w-full pl-10 pr-4 py-3 rounded-xl border border-slate-200 focus:border-brand-blue focus:ring-2 focus:ring-brand-blue/20 outline-none transition duration-200 text-sm placeholder-slate-400 text-unique-dark">
+                </div>
+            </div>
+
+            <!-- Login Button -->
+            <button type="submit" class="w-full bg-unique-dark text-white font-medium py-3.5 rounded-xl shadow-lg shadow-blue-900/10 hover:bg-brand-blue transition duration-300 transform hover:-translate-y-0.5 mt-2">
+                Sign In
+            </button>
+
+        </form>
+
+        <!-- Footer Link -->
+        <div class="mt-8 text-center pt-6 border-t border-slate-50">
+            <a href="index.html" class="text-sm text-unique-light hover:text-brand-blue font-medium transition flex items-center justify-center gap-2 group">
+                <i class="fa-solid fa-arrow-left text-xs group-hover:-translate-x-1 transition-transform"></i> Back to Home
+            </a>
+        </div>
+
+    </div>
+
+    <!-- Simple Footer Text -->
+    <div class="absolute bottom-6 w-full text-center">
+        <p class="text-xs text-slate-400">&copy; 2024 Lifeworks Advisors LLC. All rights reserved.</p>
+    </div>
+
+</body>
+</html>
